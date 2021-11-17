@@ -1,0 +1,130 @@
+    * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 62.5%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    [class*="col-"] {
+        float: left;
+        margin: 0.5%;
+    }
+    
+    .col-1 {
+        width: 7.333333333%;
+    }
+    
+    .col-2 {
+        width: 15.666666666%;
+    }
+    
+    .col-3 {
+        width: 24%;
+    }
+    
+    .col-4 {
+        width: 32.333333333%;
+    }
+    
+    .col-5 {
+        width: 40.666666666%;
+    }
+    
+    .col-6 {
+        width: 49%;
+    }
+    
+    .col-7 {
+        width: 57.333333333%;
+    }
+    
+    .col-8 {
+        width: 65.666666666%;
+    }
+    
+    .col-9 {
+        width: 74%;
+    }
+    
+    .col-10 {
+        width: 82.333333333%;
+    }
+    
+    .col-11 {
+        width: 90.666666666%;
+    }
+    
+    .col-12 {
+        width: 99%;
+    }
+    
+    body {
+        height: 100vh;
+        background-image: url('../img/ACCUEIL\ –\ 3.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    h1 {
+        letter-spacing: 0.1rem;
+        font-size: 12.8rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: #4B4747;
+    }
+    
+    h2 {
+        font-size: 9rem;
+        text-transform: capitalize;
+        font-weight: normal;
+        color: #0B396A;
+    }
+    
+    p {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: #0B396A;
+        position: relative;
+        bottom: 10%;
+    }
+    
+    .blue {
+        color: #0B396A;
+    }
+    
+    .yellow {
+        color: #FFBA33
+    }
+    
+    h3 {
+        font-size: 2rem;
+        color: #FFBA33
+    }
+    
+    .engfrbutton {
+        position: fixed;
+        left: 3rem;
+        bottom: 3rem;
+        display: inline-block;
+        padding: 1rem;
+        text-decoration: none;
+        color: #4B4747;
+        font-family: sans-serif;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.281);
+        border-radius: 0.5rem;
+        border: 0.5px solid #4B4747;
+        transition: all ease-in-out 0.2s;
+        font-weight: bold;
+    }
+    
+    .engfrbutton:hover {
+        background-color: #0B396A;
+        color: white;
+    }

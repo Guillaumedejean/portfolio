@@ -1,0 +1,163 @@
+    * {
+        margin: 0 auto;
+    }
+    
+    html {
+        font-size: 62.5%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    header {
+        text-align: center;
+        height: 50rem;
+        background-color: rgba(255, 255, 255, 0.212);
+    }
+    
+    .wrapper {
+        max-width: 144rem;
+    }
+    
+    body {
+        background-image: url('../img/ACCUEIL\ –\ 4.png');
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+    
+    h1 {
+        letter-spacing: 0.1rem;
+        font-size: 12.8rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: #4B4747;
+    }
+    
+    h2 {
+        font-size: 9rem;
+        text-transform: capitalize;
+        font-weight: normal;
+        color: #0B396A;
+    }
+    
+    p {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: #0B396A;
+    }
+    
+    [class^=item] {
+        margin-top: 10rem;
+        border-radius: 1rem;
+        height: 40rem;
+        background-color: rgba(0, 0, 0, 0.548);
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        margin-top: 1rem;
+    }
+    
+    .fw-wrap {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    [class ^=item]:not(:nth-child(5)) {
+        font-family: sans-serif;
+        flex: 1 1 22%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1%;
+    }
+    
+    .item5 {
+        font-family: sans-serif;
+        flex: 1 1 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.4%;
+    }
+    
+    .item1 {
+        position: relative;
+    }
+    
+    .item1::after {
+        content: "maquettage sur Adobe XD";
+        opacity: 0;
+        display: inline-block;
+        padding: 1rem 1rem;
+        background-color: white;
+        font-size: 1.7rem;
+        color: #4B4747;
+        border: 1px solid #4B4747;
+        border-radius: 0.5rem;
+        transition: all ease-in-out 0.3s;
+        position: absolute;
+        bottom: 0%;
+    }
+    
+    .item1:hover::after,
+    .item2:hover::after {
+        opacity: 1;
+    }
+    
+    nav ul,
+    nav ul li {
+        list-style-type: none;
+        padding: 0 5rem;
+        margin-top: 5rem;
+        display: inline-block;
+    }
+    
+    @media screen and (max-width:1440px) {
+        [class ^=item]:not(:nth-child(5)) {
+            flex: 1 1 35%;
+        }
+    }
+    
+    @media screen and (max-width:850px) {
+        [class ^=item]:not(:nth-child(5)) {
+            flex: 1 1 50%;
+        }
+        h1 {
+            font-size: 8rem;
+        }
+    }
+    
+    @media screen and (max-width:500px) {
+        [class ^=item]:not(:nth-child(5)) {
+            flex: 1 1 50%;
+        }
+        .item1 {
+            order: 4;
+        }
+        .item2 {
+            order: 5;
+        }
+        .item3 {
+            order: 6;
+        }
+        .item4 {
+            order: 2;
+        }
+        .item5 {
+            order: 1
+        }
+        .item6 {
+            order: 3
+        }
+        .item7 {
+            order: 9;
+        }
+        .item8 {
+            order: 7
+        }
+        .item9 {
+            order: 8
+        }
+    }

@@ -1,0 +1,295 @@
+                            * {
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+                            
+                            html {
+                                font-size: 62.5%;
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            }
+                            
+                            [class*="col-"] {
+                                float: left;
+                                margin: 0.5%;
+                            }
+                            
+                            .col-1 {
+                                width: 7.333333333%;
+                            }
+                            
+                            .col-2 {
+                                width: 15.666666666%;
+                            }
+                            
+                            .col-3 {
+                                width: 24%;
+                            }
+                            
+                            .col-4 {
+                                width: 32.333333333%;
+                            }
+                            
+                            .col-5 {
+                                width: 40.666666666%;
+                            }
+                            
+                            .col-6 {
+                                width: 49%;
+                            }
+                            
+                            .col-7 {
+                                width: 57.333333333%;
+                            }
+                            
+                            .col-8 {
+                                width: 65.666666666%;
+                            }
+                            
+                            .col-9 {
+                                width: 74%;
+                            }
+                            
+                            .col-10 {
+                                width: 82.333333333%;
+                            }
+                            
+                            .col-11 {
+                                width: 90.666666666%;
+                            }
+                            
+                            .col-12 {
+                                width: 99%;
+                            }
+                            
+                            .menu {
+                                width: 45%;
+                                height: 45rem;
+                                background-image: url('../img/starsvg.svg');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                transition: all ease-in-out 0.8s;
+                                z-index: 9999;
+                                position: relative;
+                                top: 25%;
+                                cursor: pointer;
+                            }
+                            
+                            .menu.open {
+                                transform: rotate(40.5deg)
+                            }
+                            
+                            .button1 {
+                                display: block;
+                                width: 0;
+                                height: 12%;
+                                transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.6s;
+                                position: absolute;
+                                top: 0rem;
+                                right: 0rem;
+                            }
+                            
+                            .menu.open .button1 {
+                                width: 12%;
+                                transform: rotate(-40.5deg);
+                                position: fixed;
+                                top: -75%;
+                                right: 20%;
+                            }
+                            
+                            .button2 {
+                                display: block;
+                                width: 0;
+                                height: 12%;
+                                transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.6s;
+                                position: absolute;
+                                top: 0rem;
+                                right: 0rem;
+                            }
+                            
+                            .menu.open .button2 {
+                                width: 12%;
+                                transform: rotate(-40.5deg);
+                                position: absolute;
+                                top: -30%;
+                                right: -1%;
+                            }
+                            
+                            .button3 {
+                                display: block;
+                                width: 0;
+                                height: 12%;
+                                transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.6s;
+                                position: absolute;
+                                top: 0rem;
+                                right: 0rem;
+                            }
+                            
+                            .menu.open .button3 {
+                                width: 12%;
+                                transform: rotate(-40.5deg);
+                                position: absolute;
+                                top: 15%;
+                                right: -22%;
+                            }
+                            
+                            @media screen and (max-width:1800px) {
+                                .menu {
+                                    top: 25%;
+                                }
+                            }
+                            
+                            @media screen and (max-width:1700px) {
+                                .col-12bis {
+                                    width: 99%;
+                                }
+                                .menu {
+                                    top: 35%;
+                                }
+                                .col-4bis {
+                                    width: 32.333333333%;
+                                }
+                                h2,
+                                h3 {
+                                    float: left;
+                                    font-size: 8rem;
+                                    position: relative;
+                                    top: 30%;
+                                }
+                                .menu.open .button1 {
+                                    width: 15%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: -50%;
+                                    right: 30%;
+                                }
+                                .menu.open .button2 {
+                                    width: 15%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: -25%;
+                                    right: -5%;
+                                }
+                                .menu.open .button3 {
+                                    width: 15%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: 15%;
+                                    right: -25%;
+                                }
+                            }
+                            
+                            @media screen and (max-width:1100px) {
+                                .col-4bis {
+                                    width: 69%;
+                                }
+                                .menu.open .button1 {
+                                    width: 25%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: -20%;
+                                    right: -10%;
+                                }
+                                .menu.open .button2 {
+                                    width: 25%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: 5%;
+                                    right: -35%;
+                                }
+                                .menu.open .button3 {
+                                    width: 25%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: 35%;
+                                    right: -55%;
+                                }
+                            }
+                            
+                            @media screen and (max-width:830px) {
+                                .menu {
+                                    width: 40%;
+                                    top: 30%;
+                                }
+                                h1 {
+                                    font-size: 8rem;
+                                    text-align: center;
+                                }
+                                h2 {
+                                    text-align: center;
+                                }
+                                p {
+                                    width: 100%;
+                                    text-align: center;
+                                    font-size: 1.5rem;
+                                    position: relative;
+                                    top: 30%;
+                                    left: 15%;
+                                }
+                                .menu.open .button1 {
+                                    width: 25%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: -20%;
+                                    right: 15%;
+                                }
+                                .menu.open .button2 {
+                                    width: 25%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: 5%;
+                                    right: -15%;
+                                }
+                                .menu.open .button3 {
+                                    width: 25%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: 30%;
+                                    right: -45%;
+                                }
+                                h1 {
+                                    line-height: 8rem;
+                                }
+                            }
+                            
+                            @media screen and (max-width:480px) {
+                                .menu {
+                                    width: 70%;
+                                    top: 25%;
+                                }
+                                h1 {
+                                    font-size: 6rem;
+                                }
+                                p {
+                                    text-align: center;
+                                    font-size: 1rem;
+                                    position: relative;
+                                    top: 15%
+                                }
+                                h2 {
+                                    text-align: center;
+                                    font-size: 4rem;
+                                    position: relative;
+                                    top: 15%;
+                                }
+                                .menu.open .button1 {
+                                    width: 35%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: 105%;
+                                    right: 15%;
+                                }
+                                .menu.open .button2 {
+                                    width: 35%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: 85%;
+                                    right: -25%;
+                                }
+                                .menu.open .button3 {
+                                    width: 35%;
+                                    transform: rotate(-40.5deg);
+                                    position: absolute;
+                                    top: 65%;
+                                    right: -65%;
+                                }
+                            }
